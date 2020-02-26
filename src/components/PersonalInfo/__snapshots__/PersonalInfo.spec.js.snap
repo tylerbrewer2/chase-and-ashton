@@ -1,0 +1,78 @@
+exports[`test renders correctly 1`] = `
+<section
+  className="sc-EHOje eLfOTt">
+  <div
+    className="undefined   row">
+    <div
+      className="col-xs-12 
+          col-sm-5 
+          undefined
+          ">
+      <div
+        className="sc-htpNat fqYUEc">
+        <h1
+          className="sc-bdVaJa kgyTWr">
+          MORGAN LINDSAY PARSONS
+        </h1>
+        <h1
+          className="sc-bdVaJa kgyTWr">
+          THE BRIDE
+        </h1>
+        <p
+          className="sc-bwzfXH jCzhFF">
+          Morgan is the owner and founder of the (future) $1,000,000+ company Morgan Parsons Creative. She is perfectly content with potatoes for breakfast, lunch and dinner and is the 2011 Chick-fil-a Cow of the Year. Morgan is caring and always thinking about others, and I can\'t wait to get to know her more every day. She\'s also hilarious and has a firey passion of saying \"How bout dah\" on a daily basis. 
+          <br />
+          -- Tyler
+        </p>
+      </div>
+    </div>
+    <div
+      className="col-xs-undefined 
+          col-sm-2 
+          undefined
+          ">
+      <div
+        className="sc-ifAKCX jPHgwG">
+        <div
+          className="sc-bxivhb iHiFor"
+          color="#000000">
+          M
+        </div>
+        <div
+          className="sc-bxivhb iHiFor"
+          color="#000000">
+          x
+        </div>
+        <div
+          className="sc-bxivhb iHiFor"
+          color="#000000">
+          T
+        </div>
+      </div>
+    </div>
+    <div
+      className="col-xs-12 
+          col-sm-5 
+          undefined
+          ">
+      <div
+        className="sc-htpNat exbpEc">
+        <h1
+          className="sc-bdVaJa kgyTWr">
+          TYLER CLARK BREWER
+        </h1>
+        <h1
+          className="sc-bdVaJa kgyTWr">
+          THE GROOM
+        </h1>
+        <p
+          className="sc-bwzfXH jCzhFF">
+          Most days you’ll find Tyler biking through the streets of Washington D.C., saving the world with code or ferociously chowing down on a Chipotle burrito the size of his head. I think I knew he was the one for me the day he asked me out… with a Chickfila sandwich. ;) #blessed.  In all seriousness, Tyler is passionate, hard working and the kindest person I know and I am excited to do life with him. 
+          <br />
+           -- Morgan
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+`;

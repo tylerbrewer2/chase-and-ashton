@@ -1,0 +1,12 @@
+exports[`component structure renders with the correct structure 1`] = `
+<div
+  className="Splash">
+  <div
+    className="SplashFooter">
+    <h1
+      className="SplashHeader">
+      Coming soon
+    </h1>
+  </div>
+</div>
+`;

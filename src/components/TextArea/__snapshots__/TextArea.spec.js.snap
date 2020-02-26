@@ -1,0 +1,8 @@
+exports[`component structure renders correctly 1`] = `
+<textarea
+  className="sc-bdVaJa cOxvEZ"
+  id="identifier"
+  name="identifier"
+  onChange={[Function]}
+  value="test value" />
+`;

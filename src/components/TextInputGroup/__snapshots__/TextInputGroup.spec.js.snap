@@ -1,0 +1,22 @@
+exports[`component structure renders correctly 1`] = `
+<div
+  className="col-xs-12 
+      undefined 
+      undefined
+      ">
+  <div
+    className="sc-htpNat hvvDZo">
+    <label
+      className="sc-bdVaJa fxdtZh"
+      htmlFor="identifier" />
+    <input
+      className="sc-bwzfXH gmTCEv"
+      id="identifier"
+      name="identifier"
+      onChange={[Function]}
+      required={false}
+      type="text"
+      value="test value" />
+  </div>
+</div>
+`;

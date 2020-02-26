@@ -1,0 +1,19 @@
+exports[`component structure renders successful flash correctly 1`] = `
+<section
+  className="col-xs-12">
+  <div
+    className="sc-bdVaJa itbRGo">
+    Successful request.
+  </div>
+</section>
+`;
+
+exports[`component structure renders unsuccessful flash correctly 1`] = `
+<section
+  className="col-xs-12">
+  <div
+    className="sc-bdVaJa eBdQSA">
+    There as an error during the request.
+  </div>
+</section>
+`;

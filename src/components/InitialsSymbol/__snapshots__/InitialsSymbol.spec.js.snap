@@ -1,0 +1,20 @@
+exports[`test renders correctly 1`] = `
+<div
+  className="sc-bwzfXH kvZDMd">
+  <div
+    className="sc-bdVaJa emyLmK"
+    color="#000000">
+    M
+  </div>
+  <div
+    className="sc-bdVaJa emyLmK"
+    color="#000000">
+    x
+  </div>
+  <div
+    className="sc-bdVaJa emyLmK"
+    color="#000000">
+    T
+  </div>
+</div>
+`;
