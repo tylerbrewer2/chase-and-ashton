@@ -22,7 +22,7 @@ export default class AttendeeGenerator {
   }
 
   generateErrorId() {
-    return `Error Id: ${Math.random().toString(36).substring(7)}`; 
+    return `Error Id: ${Math.random().toString(36).substring(7)}`;
   }
 
   handleError(error, errorMessage) {
@@ -37,26 +37,38 @@ export default class AttendeeGenerator {
 
   async create({
     successMessage = 'Request was successful.',
-    errorMessage = 'There was an issue with the request. Please try again or contact Tyler or Morgan with the "Error Id" if failure continues.',
+    errorMessage = 'There was an issue with the request. Please try again and contact Chase or Ashton if failure continues.',
   }) {
     if (!this.attendee.firstName && !this.attendee.lastName) { return }
 
-    let response;
-    try {
-      response =
-        await firebase.database()
-                      .ref(`attendees/${this.attendee.firstName}${this.attendee.lastName}`)
-                      .set(this.attendee)
-                      .then(() => (
-                        {
-                          status: 'success',
-                          message: successMessage,
-                        }
-                      ));
-    } catch(error) {
-      response = this.handleError(error, errorMessage);
-    }
-
-   return response;
+    debugger;
+    // Default options are marked with *
+    return await fetch(process.env.REACT_APP_BACKEND_URL + "/rsvps/new", {
+      body: JSON.stringify(this.attendee),
+      method: 'POST',
+      mode: 'cors',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+    })
+    .then((response) => {
+      console.log('response');
+      console.log(response);
+      debugger;
+      return response.json(); // parses JSON response into native JavaScript objects
+    })
+    .then((data) => {
+      debugger;
+      // response = data
+      console.log(data); // JSON data parsed by `response.json()` call
+      return {
+        status: 'success',
+        message: successMessage,
+      };
+    })
+    .catch((error) => {
+      return this.handleError(error, errorMessage)
+    });
   }
 }
