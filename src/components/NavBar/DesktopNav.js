@@ -1,39 +1,35 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import LargeText from '../LargeText';
 import Row from '../Row';
 import Col from '../Col';
 import FloatWrapper from '../FloatWrapper';
-import Image from '../Image';
 import NavItem from '../NavItem';
 
 import MediaWidths from '../../styles/helpers/MediaWidths';
-import logo from '../../images/logo.svg';
 
 const DesktopNavCore = ({ className }) => (
   <Row
     className={className}
     middle
   >
-    <Col mobileWidth={5}>
+    <Col mobileWidth={4}>
       <FloatWrapper direction='right'>
-        <NavItem to="/">HOME</NavItem>
-        <NavItem to="/details">DETAILS</NavItem>
+        <NavItem marginTop="0" to="/">HOME</NavItem>
+        <NavItem marginTop="0" to="/details">DETAILS</NavItem>
       </FloatWrapper>
     </Col>
     <Col
-      mobileWidth={2}
+      mobileWidth={4}
       center
     >
-      <Image
-        height="100px"
-        src={logo}
-      />
+      <LargeText>The Hamptons</LargeText>
     </Col>
-    <Col mobileWidth={5}>
+    <Col mobileWidth={4}>
       <FloatWrapper direction='left'>
-        <NavItem to="/rsvp">RSVP</NavItem>
-        <NavItem to="/registry">REGISTRY</NavItem>
+        <NavItem marginTop="0" to="/rsvp">RSVP</NavItem>
+        <NavItem marginTop="0" to="/registry">REGISTRY</NavItem>
       </FloatWrapper>
     </Col>
   </Row>
@@ -42,7 +38,8 @@ const DesktopNavCore = ({ className }) => (
 const DesktopNav = styled(DesktopNavCore)`
   margin: 0 auto;
   max-width: 90%;
-  height: 150px;
+  height: 130px;
+  font-family: 'AvenirNextRegular', 'Helvetica', 'sans-serif';
 
   @media (${MediaWidths.mobile}) {
     display: none;

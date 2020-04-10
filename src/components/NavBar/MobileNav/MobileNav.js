@@ -2,14 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import { slide as Menu } from 'react-burger-menu'
 
+import LargeText from '../../LargeText';
 import MediaWidths from '../../../styles/helpers/MediaWidths';
 import Colors from '../../../styles/helpers/Colors';
 
 import Col from '../../Col';
-import Image from '../../Image';
 import NavItem from '../../NavItem';
-
-import logo from '../../../images/logo.svg';
 
 const styles = {
   bmBurgerButton: {
@@ -58,14 +56,10 @@ class MobileNavCore extends React.Component {
     return (
       <div className={className}>
         <Col
-          mobileWidth={2}
+          mobileWidth={3}
           center
         >
-          <Image
-            height="100px"
-            marginLeft="25px"
-            src={logo}
-          />
+          <LargeText>The Hamptons</LargeText>
         </Col>
 
         <Menu isOpen={false} right styles={styles}>
@@ -84,6 +78,7 @@ const MobileNav = styled(MobileNavCore)`
 
   @media (${MediaWidths.mobile}) {
     padding-top: 20px;
+    padding-left: 30px;
     display: block;
     background-color: white;
     width: 100%;

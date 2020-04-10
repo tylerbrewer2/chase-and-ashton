@@ -1,9 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-// Containers
-import ThingsToDo from '../ThingsToDo';
-
 // Components
 import FullWidthImage from '../../components/FullWidthImage';
 import Header from '../../components/Header';
@@ -11,63 +8,28 @@ import Section from '../../components/Section';
 import BodyText from '../../components/BodyText';
 
 // Images
-import walk from '../../images/ny-walk-75.jpg';
+import bannerImage from '../../images/3.jpg';
 
 const DetailsCore = ({ className }) => {
   return (
     <div className={className}>
       <FullWidthImage
-        src={walk}
+        src={bannerImage}
         banner
       />
       <Section>
         <section className="ceremony">
           <Header>Ceremony</Header>
-          <BodyText>Date: December 2nd, 2017</BodyText>
-          <BodyText>Time: 4:30pm</BodyText>
-          <BodyText>Location: Accelerator Space</BodyText>
-          <BodyText>Address: 417 Benninghaus Rd, Baltimore, MD 21212</BodyText>
+          <BodyText>Date: June 26th, 2020</BodyText>
+          <BodyText>Time: 5:00pm</BodyText>
+          <BodyText>Location: Grange Insurance Audubon Center</BodyText>
+          <BodyText>Address: 505 W Whittier St, Columbus, OH 43215</BodyText>
         </section>
-
-        <section>
-          <Header>Accommodations</Header>
-          <BodyText>Attendees can receive a room discount at the <a href="https://www.radisson.com/baltimore-hotel-md-21210/mdbaltim" target="blank">Raddison Hotel - Cross Keys</a> in Baltimore, if you would like the discount please follow these directions:</BodyText>
-          <BodyText>
-            <ol>
-              <li>
-                <BodyText>Visit <a href='https://www.radisson.com/baltimore-hotel-md-21210/mdbaltim' target='_blank'>the hotel website</a></BodyText>
-              </li>
-
-              <li>
-                <BodyText>On the left side, select the days you are checking in and checking out and click <b>More Search Options</b></BodyText>
-              </li>
-
-
-              <li>
-                <BodyText>In the promotional code box, enter <b>WEDPB</b></BodyText>
-              </li>
-
-              <li>
-                <BodyText>Select the hotel (only our group's name should appear) by selecting <b>Book now</b></BodyText>
-              </li>
-
-              <li>
-                <BodyText>A <b>Room Options</b> screen should appear. Select the bed type that you are requesting, which is located at the bottom of the page</BodyText>
-              </li>
-
-              <li>
-                <BodyText>Once you select the bed type you are requesting you will be prompted to your reservation profile screen where you can input your contact and payment information</BodyText>
-              </li>
-            </ol>
-            </BodyText>
-          </section>
-
-          <ThingsToDo />
       </Section>
       <iframe
         height="400"
         frameBorder="0" style={{width: "100%", border: 0}}
-        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBQoOtcq_iWSSQz438Bjxs8rJ_FdqUY_dw&q=Accelerator+Space,Baltimore+MD" allowFullScreen
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.780024649232!2d-83.01201788462404!3d39.946309879422536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388f4367979a8b%3A0xaaede56b5a599e41!2s505%20W%20Whittier%20St%2C%20Columbus%2C%20OH%2043215!5e0!3m2!1sen!2sus!4v1586539581109!5m2!1sen!2sus" allowFullScreen
       />
     </div>
   )

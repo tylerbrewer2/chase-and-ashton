@@ -88,7 +88,7 @@ export default class RSVPForm extends React.Component {
           />
 
           <TextInputGroup
-            labelText="Would you like braised boneless beef or autumn roasted salmon?"
+            labelText="We will be having a taco bar, do you have any dietary restrictions? If so, what are they?"
             identifier="food"
             value={this.state.food}
             onChange={this.onChange}
@@ -102,7 +102,7 @@ export default class RSVPForm extends React.Component {
           />
 
           <TextInputGroup
-            labelText="Would your guest like braised boneless beef or autumn roasted salmon?"
+            labelText="Does your guest have any dietary restrictions? If so, what are they?"
             identifier="guestFood"
             value={this.state.guestFood}
             onChange={this.onChange}

@@ -6,14 +6,14 @@ import FullWidthImage from '../../components/FullWidthImage';
 import PersonalInfo from '../../components/PersonalInfo';
 
 // Images
-import nyc2 from '../../images/nyc-2-75.jpg';
+import bannerImage from '../../images/2.jpg';
 import leaves from '../../images/leaves.svg';
 
 const Home = () => {
   return (
     <div>
       <FullWidthImage
-        src={nyc2}
+        src={bannerImage}
         banner
       />
       <PersonalInfo />

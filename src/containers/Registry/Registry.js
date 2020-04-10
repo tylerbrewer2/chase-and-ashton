@@ -7,7 +7,7 @@ import RegistryCard from '../../components/RegistryCard';
 import Row from '../../components/Row';
 
 // images
-import bench from '../../images/bench-75.jpg';
+import bannerImage from '../../images/1.jpg';
 import target from '../../images/target.jpg';
 import anthropologie from '../../images/anthropologie.png';
 import amazon from '../../images/amazon.jpg';
@@ -16,7 +16,7 @@ const Registry = () => {
   return (
     <div>
       <FullWidthImage
-        src={bench}
+        src={bannerImage}
         banner
       />
       <Section>
