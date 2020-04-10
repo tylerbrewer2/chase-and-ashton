@@ -1,6 +1,0 @@
-exports[`test renders correctly 1`] = `
-<li
-  className="sc-bdVaJa dfPjrf">
-  Test item
-</li>
-`;

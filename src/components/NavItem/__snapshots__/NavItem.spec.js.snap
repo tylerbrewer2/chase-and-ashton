@@ -1,8 +1,0 @@
-exports[`test renders correctly 1`] = `
-<a
-  className="sc-bdVaJa gjWQVa"
-  href="test"
-  onClick={[Function]}>
-  Test item
-</a>
-`;
