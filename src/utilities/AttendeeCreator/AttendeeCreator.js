@@ -43,7 +43,7 @@ export default class AttendeeGenerator {
 
     debugger;
     // Default options are marked with *
-    return await fetch(process.env.REACT_APP_BACKEND_URL + "/rsvps/new", {
+    return await fetch("http://206.189.189.244:8080/rsvps/new", {
       body: JSON.stringify(this.attendee),
       method: 'POST',
       mode: 'cors',
